@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="10.3.3" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Positano.CrossCutting\Positano.CrossCutting.csproj" />
+    <ProjectReference Include="..\Positano.Domain\Positano.Domain.csproj" />
+    <ProjectReference Include="..\Positano.Persistence\Positano.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CQRS\Taste\Commands\" />
+    <Folder Include="CQRS\TypeOrder\Commands\" />
+  </ItemGroup>
+
+</Project>

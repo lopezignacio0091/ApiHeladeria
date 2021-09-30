@@ -1,0 +1,9 @@
+C:\Users\juani.lopez\source\repos\ApiHeladeria\Positano.Domain\bin\Debug\netcoreapp3.1\Positano.Domain.deps.json
+C:\Users\juani.lopez\source\repos\ApiHeladeria\Positano.Domain\bin\Debug\netcoreapp3.1\Positano.Domain.dll
+C:\Users\juani.lopez\source\repos\ApiHeladeria\Positano.Domain\bin\Debug\netcoreapp3.1\Positano.Domain.pdb
+C:\Users\juani.lopez\source\repos\ApiHeladeria\Positano.Domain\obj\Debug\netcoreapp3.1\Positano.Domain.csprojAssemblyReference.cache
+C:\Users\juani.lopez\source\repos\ApiHeladeria\Positano.Domain\obj\Debug\netcoreapp3.1\Positano.Domain.AssemblyInfoInputs.cache
+C:\Users\juani.lopez\source\repos\ApiHeladeria\Positano.Domain\obj\Debug\netcoreapp3.1\Positano.Domain.AssemblyInfo.cs
+C:\Users\juani.lopez\source\repos\ApiHeladeria\Positano.Domain\obj\Debug\netcoreapp3.1\Positano.Domain.csproj.CoreCompileInputs.cache
+C:\Users\juani.lopez\source\repos\ApiHeladeria\Positano.Domain\obj\Debug\netcoreapp3.1\Positano.Domain.dll
+C:\Users\juani.lopez\source\repos\ApiHeladeria\Positano.Domain\obj\Debug\netcoreapp3.1\Positano.Domain.pdb

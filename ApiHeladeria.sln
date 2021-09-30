@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiHeladeria", "ApiHeladeria\ApiHeladeria.csproj", "{33F6F42E-9478-474A-860F-F54909683F29}"
+	ProjectSection(ProjectDependencies) = postProject
+		{24FD1D07-BBF7-4157-B603-B01C57813400} = {24FD1D07-BBF7-4157-B603-B01C57813400}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00.Domain", "00.Domain", "{A44C0BBF-DE42-4672-AAC1-14AA566278EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Positano.Domain", "Positano.Domain\Positano.Domain.csproj", "{24FD1D07-BBF7-4157-B603-B01C57813400}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.Insfrastructure", "01.Insfrastructure", "{0A348636-D042-413A-BF53-70AE7FE40A3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Positano.CrossCutting", "Positano.CrossCutting\Positano.CrossCutting.csproj", "{A288FB4A-7E3C-4F75-A755-76E4012DBDDA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCrutting", "CrossCrutting", "{28135280-FEE6-4AF7-B8EA-63CB6440C749}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{4BD9F0F3-2A38-4D6C-BD3E-4D056B676FA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Positano.Persistence", "Positano.Persistence\Positano.Persistence.csproj", "{0E52F93F-DB5D-4EB4-BF6E-3641F9DCF388}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Aplication", "02.Aplication", "{A4A98E76-447C-4BC4-B0D5-F255A9B23459}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Positano.Application", "Positano.Application\Positano.Application.csproj", "{9AF05D8F-7A43-4FBB-8338-80EC44F0DAA3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.ServiceHost", "03.ServiceHost", "{546D3E06-7C2C-4FF8-9721-E92E27832826}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Positano.ApiModel", "Positano.ApiModel\Positano.ApiModel.csproj", "{B18D02B5-467B-439B-A230-B6CBBBB631E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33F6F42E-9478-474A-860F-F54909683F29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33F6F42E-9478-474A-860F-F54909683F29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33F6F42E-9478-474A-860F-F54909683F29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33F6F42E-9478-474A-860F-F54909683F29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24FD1D07-BBF7-4157-B603-B01C57813400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24FD1D07-BBF7-4157-B603-B01C57813400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24FD1D07-BBF7-4157-B603-B01C57813400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24FD1D07-BBF7-4157-B603-B01C57813400}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A288FB4A-7E3C-4F75-A755-76E4012DBDDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A288FB4A-7E3C-4F75-A755-76E4012DBDDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A288FB4A-7E3C-4F75-A755-76E4012DBDDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A288FB4A-7E3C-4F75-A755-76E4012DBDDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E52F93F-DB5D-4EB4-BF6E-3641F9DCF388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E52F93F-DB5D-4EB4-BF6E-3641F9DCF388}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E52F93F-DB5D-4EB4-BF6E-3641F9DCF388}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E52F93F-DB5D-4EB4-BF6E-3641F9DCF388}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AF05D8F-7A43-4FBB-8338-80EC44F0DAA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AF05D8F-7A43-4FBB-8338-80EC44F0DAA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AF05D8F-7A43-4FBB-8338-80EC44F0DAA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AF05D8F-7A43-4FBB-8338-80EC44F0DAA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B18D02B5-467B-439B-A230-B6CBBBB631E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B18D02B5-467B-439B-A230-B6CBBBB631E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B18D02B5-467B-439B-A230-B6CBBBB631E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B18D02B5-467B-439B-A230-B6CBBBB631E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{33F6F42E-9478-474A-860F-F54909683F29} = {546D3E06-7C2C-4FF8-9721-E92E27832826}
+		{24FD1D07-BBF7-4157-B603-B01C57813400} = {A44C0BBF-DE42-4672-AAC1-14AA566278EE}
+		{A288FB4A-7E3C-4F75-A755-76E4012DBDDA} = {28135280-FEE6-4AF7-B8EA-63CB6440C749}
+		{28135280-FEE6-4AF7-B8EA-63CB6440C749} = {0A348636-D042-413A-BF53-70AE7FE40A3A}
+		{4BD9F0F3-2A38-4D6C-BD3E-4D056B676FA0} = {0A348636-D042-413A-BF53-70AE7FE40A3A}
+		{0E52F93F-DB5D-4EB4-BF6E-3641F9DCF388} = {4BD9F0F3-2A38-4D6C-BD3E-4D056B676FA0}
+		{9AF05D8F-7A43-4FBB-8338-80EC44F0DAA3} = {A4A98E76-447C-4BC4-B0D5-F255A9B23459}
+		{B18D02B5-467B-439B-A230-B6CBBBB631E3} = {546D3E06-7C2C-4FF8-9721-E92E27832826}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B37AAD66-B7A4-4768-B0EE-D8DCF2942643}
+	EndGlobalSection
+EndGlobal

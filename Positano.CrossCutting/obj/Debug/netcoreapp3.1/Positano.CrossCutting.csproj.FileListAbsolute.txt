@@ -1,0 +1,9 @@
+C:\Users\juani.lopez\source\repos\ApiHeladeria\Positano.CrossCutting\bin\Debug\netcoreapp3.1\Positano.CrossCutting.deps.json
+C:\Users\juani.lopez\source\repos\ApiHeladeria\Positano.CrossCutting\bin\Debug\netcoreapp3.1\Positano.CrossCutting.dll
+C:\Users\juani.lopez\source\repos\ApiHeladeria\Positano.CrossCutting\bin\Debug\netcoreapp3.1\Positano.CrossCutting.pdb
+C:\Users\juani.lopez\source\repos\ApiHeladeria\Positano.CrossCutting\obj\Debug\netcoreapp3.1\Positano.CrossCutting.csprojAssemblyReference.cache
+C:\Users\juani.lopez\source\repos\ApiHeladeria\Positano.CrossCutting\obj\Debug\netcoreapp3.1\Positano.CrossCutting.AssemblyInfoInputs.cache
+C:\Users\juani.lopez\source\repos\ApiHeladeria\Positano.CrossCutting\obj\Debug\netcoreapp3.1\Positano.CrossCutting.AssemblyInfo.cs
+C:\Users\juani.lopez\source\repos\ApiHeladeria\Positano.CrossCutting\obj\Debug\netcoreapp3.1\Positano.CrossCutting.csproj.CoreCompileInputs.cache
+C:\Users\juani.lopez\source\repos\ApiHeladeria\Positano.CrossCutting\obj\Debug\netcoreapp3.1\Positano.CrossCutting.dll
+C:\Users\juani.lopez\source\repos\ApiHeladeria\Positano.CrossCutting\obj\Debug\netcoreapp3.1\Positano.CrossCutting.pdb
