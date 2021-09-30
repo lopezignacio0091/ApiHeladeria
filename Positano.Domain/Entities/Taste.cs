@@ -8,7 +8,6 @@ namespace Positano.Domain.Entities
     {
         public int TasteId { get; set; }
         public string Name { get; set; }
-
         public int Quantity { get; set; }
 
     }
