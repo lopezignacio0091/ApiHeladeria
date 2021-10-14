@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Positano.Persistence;
 
 namespace Positano.Persistence.Migrations
 {
     [DbContext(typeof(PositanoContext))]
-    partial class PositanoContextModelSnapshot : ModelSnapshot
+    [Migration("20211001201942_updateTableTasteStatus")]
+    partial class updateTableTasteStatus
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

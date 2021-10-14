@@ -1,6 +1,7 @@
 ﻿using FluentValidation;
 using MediatR;
 using Positano.Domain.Entities;
+using Positano.Domain.Enum;
 using Positano.Persistence;
 using System;
 using System.Collections.Generic;
@@ -11,31 +12,40 @@ using System.Threading.Tasks;
 
 namespace Positano.Application.CQRS
 {
-    public class EditStatusOrderCommand
+    public class CreateTasteCommand
     {
         public class Command : IRequest<CommandResult>
         {
-            public int OrderId { get; set; }
+         
+            public string Name { get; set; }
+         
+            public int Quantity { get; set; }
+
+            public TypeTaste TypeTaste { get; set; }
+
         }
 
         private class CreateBatchCommandValidator : AbstractValidator<Command>
         {
             public CreateBatchCommandValidator()
             {
-                RuleFor(x => x.OrderId).NotEmpty().WithMessage("Campo Requerido");
-              
+                RuleFor(x => x.Name).NotEmpty().WithMessage("Campo Requerido");
+                RuleFor(x => x.Quantity).NotEmpty().WithMessage("Campo Requerido");
+               
             }
         }
 
-
         public class Handler : IRequestHandler<Command, CommandResult>
         {
-            private readonly GenericRepository<Order> _repository;
+            private readonly GenericRepository<Taste> _repository;
 
-            public Handler(GenericRepository<Order> repository)
+
+            public Handler(GenericRepository<Taste> repository)
             {
                 _repository = repository;
+
             }
+
             public async Task<CommandResult> Handle(Command request, CancellationToken cancellationToken)
             {
                 try
@@ -45,17 +55,19 @@ namespace Positano.Application.CQRS
                     if (!validator.IsValid)
                         return CommandResult.Create(validator.Errors.ToList());
 
-                    var order = _repository.GetByIdInclude(x => x.OrderId == request.OrderId,
-                        x=>x.User,x=>x.TypeOrders,
-                        x=>x.Tastes);
 
-                    if (order == null)
+                    var taste = new Taste
                     {
-                        return null;
-                    }
-                    order.Status = Domain.Enum.Status.Delivered;
-                    _repository.Update(order);
-                    return CommandResult.Create(order);
+
+                        Name = request.Name,
+                        Quantity = request.Quantity,
+                        TypeTaste = request.TypeTaste,
+
+                    };
+
+                    _repository.Insert(taste);
+
+                    return CommandResult.Create(taste);
                 }
                 catch (System.Exception ex)
                 {
@@ -63,5 +75,6 @@ namespace Positano.Application.CQRS
                 }
             }
         }
+
     }
 }

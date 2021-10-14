@@ -11,5 +11,6 @@ namespace Positano.Domain.Entities
         public int Cost { get; set; }
 
 
+
     }
 }

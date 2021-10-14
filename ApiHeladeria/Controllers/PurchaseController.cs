@@ -60,5 +60,23 @@ namespace ApiHeladeria.Controllers
             return Ok(response);
         }
 
+
+        [HttpGet("getByDate")]
+        public async Task<IActionResult> GetPurchaseDate([FromQuery] GetDatePurchaseQuery.Query query)
+        {
+            var result = await _mediator.Send(query);
+
+            ApiResponse response;
+            if (!result.IsValid)
+                response = ApiResponse.Create(result.Errors);
+            else
+                response = ApiResponse.Create(new
+                {
+                    listPurchaseDTO = result.Purchases.Select(u => new PurchaseViewModel(u, false))
+                },
+                "Acceso autorizado");
+
+            return Ok(response);
+        }
     }
 }
